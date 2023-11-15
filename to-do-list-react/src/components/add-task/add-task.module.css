@@ -1,0 +1,240 @@
+.content {
+	position: absolute;
+	top: 15rem;
+	left: 5rem;
+	width: 10rem;
+	height: 8rem;
+	box-shadow: 7px 7px black;
+	border-radius: 0.8125rem;
+	border: 3px solid black;
+	background-color: #eaeaea;
+}
+
+.dialog {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.container {
+	background-color: white;
+	margin-top: 2rem;
+	height: 10rem;
+	width: 50rem;
+	box-shadow: 4px 4px black;
+	border-radius: 0.8125rem;
+	border: 3px solid black;
+}
+
+.task-name {
+	padding-left: 1rem;
+	margin-top: 1rem;
+	background-color: white;
+	width: 100%;
+	border: none;
+	font-family: Inter;
+	font-weight: 800;
+	letter-spacing: -0.09rem;
+	font-size: 1.3rem;
+}
+
+.task-name:focus {
+	outline: none;
+}
+
+.task-name::placeholder {
+	opacity: 0.5;
+}
+.task-description {
+	padding-left: 1rem;
+	margin-top: 1rem;
+	width: 100%;
+	border: none;
+	font-family: Inter;
+	font-weight: 600;
+	letter-spacing: -0.09rem;
+	font-size: 1.3rem;
+}
+
+.task-description:focus {
+	outline: none;
+}
+
+.task-description::placeholder {
+	opacity: 0.5;
+}
+
+.add-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 6rem;
+	height: 2rem;
+	background-color: #ff7777;
+	border-radius: 5px;
+	box-shadow: 2px 2px black;
+	border: 2px solid black;
+	margin-top: 5rem;
+	transform: translate(19.5rem, -4rem);
+}
+
+.add-task-box {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.add-task-fixed-box {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.add-task {
+	font-family: Inter;
+	font-size: 1rem;
+	margin-bottom: 0;
+	font-weight: 800;
+	color: white;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-color: black;
+	letter-spacing: -0.05rem;
+}
+
+.add-task-fixed {
+	font-family: Inter;
+	font-size: 1rem;
+	margin-bottom: 0;
+	font-weight: 800;
+	color: white;
+	letter-spacing: -0.05rem;
+	position: absolute;
+	right: 0rem;
+	bottom: -0.75rem;
+}
+
+.cancel-button {
+	width: 4.8125rem;
+	height: 2.0625rem;
+	background-color: #d6d6d6;
+	border-radius: 5px;
+	box-shadow: 2px 2px black;
+	border: 2px solid black;
+}
+
+.cancel-box {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.cancel-fixed-box {
+	display: flex;
+	justify-content: center;
+
+	position: relative;
+}
+
+.cancel {
+	font-family: Inter;
+	font-size: 0.8rem;
+	margin-bottom: 0;
+	font-weight: 800;
+	color: white;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-color: black;
+	letter-spacing: -0.05rem;
+	transform: translateY(0.29rem);
+}
+
+.cancel-fixed {
+	font-family: Inter;
+	font-size: 0.8rem;
+	margin-bottom: 0;
+	font-weight: 800;
+	color: white;
+	letter-spacing: -0.05rem;
+	transform: translateY(-0.9rem);
+}
+
+.buttons-box {
+	display: flex;
+	gap: 1rem;
+}
+
+.body-button {
+	position: relative;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	height: 2rem;
+	padding-inline: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	background-color: transparent;
+	box-shadow: 2px 2px black;
+	border: 2px solid black;
+	transform: translateY(-2rem);
+}
+
+.btn-text {
+	margin: 0.3rem;
+	margin-left: 0.5rem;
+	font-family: Inter;
+	font-size: 0.8rem;
+	margin-bottom: 0;
+	font-weight: 700;
+	letter-spacing: -0.05rem;
+	transform: translate(-0.1rem);
+}
+
+.deadline {
+	margin-bottom: 0;
+	margin-left: 0.5rem;
+}
+
+.priority-button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.priority-box {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.priority-fixed-box {
+	display: flex;
+	justify-content: center;
+
+	position: relative;
+}
+
+.priority {
+	font-family: Inter;
+	font-size: 1rem;
+	margin-bottom: 0;
+	font-weight: 800;
+	color: white;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-color: black;
+	letter-spacing: -0.05rem;
+}
+
+.priority-fixed {
+	font-family: Inter;
+	font-size: 1rem;
+	margin-bottom: 0;
+	font-weight: 800;
+	color: white;
+	letter-spacing: -0.05rem;
+	transform: translatex(-4.05rem);
+}

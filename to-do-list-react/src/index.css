@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eaeaea;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}

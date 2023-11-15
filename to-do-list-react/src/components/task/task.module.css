@@ -1,0 +1,95 @@
+.container {
+	padding-left: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1rem;
+	min-width: 50rem;
+	height: 3.75rem;
+	border-bottom: 3px solid rgba(153, 153, 153, 0.5);
+}
+
+.left-side {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.task-radio {
+	transform: scale(2);
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+}
+
+.task-name {
+	text-align: center;
+	margin: 0;
+	padding-left: 0.9rem;
+	color: #000;
+	text-align: center;
+	font-family: Inter;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.09375rem;
+	text-align: left;
+}
+
+.task-description {
+	text-align: center;
+	margin: 0;
+	padding-left: 0.9rem;
+	color: #000;
+	text-align: center;
+	font-family: Inter;
+	font-size: 0.9rem;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: -0.09375rem;
+	text-align: left;
+}
+
+.deadline-link {
+	text-decoration: none;
+	transform: translateY(0rem);
+}
+
+.deadline-box {
+	display: flex;
+	align-items: center;
+	margin-left: 2rem;
+}
+
+svg {
+	margin-right: 0.5rem;
+}
+
+.deadline {
+	margin: 0;
+	color: #005b09;
+	font-family: Inter;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: -0.09375rem;
+}
+
+.icons {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.delete-icon {
+	margin-left: 1rem;
+}
+
+.edit-icon,
+.edit-deadline-icon,
+.delete-icon {
+	transform: translateY(0rem);
+	width: 3rem;
+}

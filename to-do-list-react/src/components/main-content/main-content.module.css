@@ -1,0 +1,92 @@
+.container {
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.calendar-col {
+	display: flex;
+	align-items: center;
+	transform: translatey(-25%);
+	justify-content: center;
+	width: 50%;
+}
+
+.tasks-col {
+	display: flex;
+	justify-content: center;
+	transform: translateX(-25%);
+	width: 50%;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	width: 8.5rem;
+	height: 2.9375rem;
+	transform: translateY(3rem);
+	text-decoration: none;
+}
+
+.text {
+	color: #000;
+	margin: 0;
+	text-align: center;
+	font-family: Inter;
+	font-size: 1.6875rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -0.12656rem;
+}
+
+.settings-icon {
+	margin-right: 0.5rem;
+}
+
+.add-button {
+	width: 6rem;
+	height: 2.5rem;
+	background-color: #ff7777;
+	border-radius: 5px;
+	box-shadow: 2px 2px black;
+	border: 2px solid black;
+	margin-top: 2rem;
+	margin-left: 3rem;
+}
+
+.add-task-box {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.add-task-fixed-box {
+	display: flex;
+	justify-content: center;
+
+	position: relative;
+}
+
+.add-task {
+	font-family: Inter;
+	font-size: 1rem;
+	margin-bottom: 0;
+	font-weight: 800;
+	color: white;
+	-webkit-text-stroke-width: 3px;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-color: black;
+	letter-spacing: -0.05rem;
+	transform: translateY(0.4rem);
+}
+
+.add-task-fixed {
+	font-family: Inter;
+	font-size: 1rem;
+	margin-bottom: 0;
+	font-weight: 800;
+	color: white;
+	letter-spacing: -0.05rem;
+	transform: translateY(-1.1rem);
+}
