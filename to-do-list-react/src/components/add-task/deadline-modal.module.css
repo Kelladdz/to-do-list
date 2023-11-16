@@ -15,7 +15,7 @@
 .calendar {
 	box-shadow: 7px 7px black;
 	border: 3px solid black !important;
-	border-radius: 0.8125rem;
+	border-radius: 5px;
 }
 
 .shadow {
@@ -67,4 +67,15 @@
 	color: white;
 	letter-spacing: -0.05rem;
 	transform: translateY(-0.9rem);
+}
+
+.date-input {
+	padding-left: 0.5rem;
+	height: 2.5rem;
+	border: 3px solid black;
+	border-radius: 5px;
+	box-shadow: 7px 7px;
+	font-family: Inter;
+	font-weight: 800;
+	letter-spacing: -0.09rem;
 }

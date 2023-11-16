@@ -117,7 +117,7 @@ export default function EditTask({ task, onSubmit, onEdit }) {
 						onHide={() => setDeadlineShow(false)}
 						style={{
 							width: '20rem',
-							height: '26rem',
+							height: '27rem',
 							boxShadow: '7px 7px black',
 							borderRadius: '0.8125rem',
 							border: '3px solid black',
@@ -127,7 +127,7 @@ export default function EditTask({ task, onSubmit, onEdit }) {
 							left: '37rem',
 						}}>
 						<Modal.Header style={{ display: 'flex', justifyContent: 'center' }}>
-							<input value={deadline.toLocaleDateString()} readOnly />
+							<input className={css2['date-input']} value={deadline.toLocaleDateString()} readOnly />
 						</Modal.Header>
 						<Modal.Body style={{ display: 'flex', justifyContent: 'center' }}>
 							<DatePicker

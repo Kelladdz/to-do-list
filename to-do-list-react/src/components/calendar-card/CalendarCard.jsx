@@ -76,7 +76,7 @@ export default function CalendarCard({ changeDate }) {
 					</div>
 				</button>
 				<button className={css['next-button']} onClick={() => getNextDay(selectedDate)}>
-				<div className={css['Next-box']}>
+					<div className={css['Next-box']}>
 						<p className={css['next']}>Next</p>
 					</div>
 					<div className={css['next-fixed-box']}>
@@ -84,7 +84,6 @@ export default function CalendarCard({ changeDate }) {
 					</div>
 				</button>
 			</div>
-			<p>{selectedDate.toLocaleDateString()}</p>
 		</div>
 	);
 }
