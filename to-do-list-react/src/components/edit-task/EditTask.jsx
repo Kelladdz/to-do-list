@@ -25,21 +25,17 @@ export default function EditTask({ task, onSubmit, onEdit }) {
 
 	const handleChangeName = event => {
 		setName(event.target.value);
-		console.log('Name changed to: ', name);
 	};
 
 	const handleChangeDescription = event => {
 		setDescription(event.target.value);
-		console.log('Description changed to: ', description);
 	};
 
 	const handleChangeDeadline = date => {
 		setDeadline(date);
-		console.log('Deadline changed to: ', deadline);
 	};
 
 	const handleChangePriority = value => {
-		console.log('Priority changed to: ', priority);
 		setPriority(value);
 		setPriorityShow(false);
 	};
@@ -47,7 +43,6 @@ export default function EditTask({ task, onSubmit, onEdit }) {
 	const handleSubmit = event => {
 		event.preventDefault();
 		onEdit(task.id, name, description, deadline, priority);
-		console.log('edited', name, description, deadline, priority);
 		onSubmit();
 	};
 

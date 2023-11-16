@@ -17,7 +17,7 @@ namespace to_do_list_api.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.13")
+                .HasAnnotation("ProductVersion", "7.0.14")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -44,33 +44,7 @@ namespace to_do_list_api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tasks");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("15e475fd-e760-4b54-9323-cc2844725e14"),
-                            Deadline = new DateTime(2023, 11, 19, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Studying an irregular verbs",
-                            Name = "English",
-                            Priority = (byte)3
-                        },
-                        new
-                        {
-                            Id = new Guid("c0a0e75a-0ea4-48a6-b69f-f1165feb52f7"),
-                            Deadline = new DateTime(2023, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Implement a backend in my app",
-                            Name = "Coding",
-                            Priority = (byte)2
-                        },
-                        new
-                        {
-                            Id = new Guid("4abf0282-c3f3-471a-8833-ac78555a47ce"),
-                            Deadline = new DateTime(2023, 11, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Netflix, Games, Walking",
-                            Name = "Spend some time with my girlfriend",
-                            Priority = (byte)1
-                        });
+                    b.ToTable("Todos");
                 });
 #pragma warning restore 612, 618
         }

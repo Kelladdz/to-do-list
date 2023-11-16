@@ -19,7 +19,7 @@ public class TasksController : ControllerBase
     [HttpGet("tasks")]
     public async Task<ActionResult<IEnumerable<Todo>>> GetTasks()
     {
-        var tasks = await _dbContext.Tasks.OrderBy(task => task.Priority).ToListAsync();
+        var tasks = await _dbContext.Todos.OrderBy(task => task.Priority).ToListAsync();
         return Ok(tasks);
     }
 
@@ -27,7 +27,7 @@ public class TasksController : ControllerBase
     public async Task<ActionResult<Todo>> PostTask(Todo task)
     {        
         task.CreateId();
-        _dbContext.Tasks.Add(task);
+        _dbContext.Todos.Add(task);
         await _dbContext.SaveChangesAsync();
         return CreatedAtAction("GetTasks",task);
     }
@@ -35,7 +35,7 @@ public class TasksController : ControllerBase
     [HttpPut("{Id}")]
     public async Task<ActionResult<Todo>> PutCity(Guid Id, Todo task)
     {    
-        var existingTask = await _dbContext.Tasks.FindAsync(Id);
+        var existingTask = await _dbContext.Todos.FindAsync(Id);
 
         if(existingTask == null)
         {
@@ -54,7 +54,7 @@ public class TasksController : ControllerBase
         }
         catch (DbUpdateConcurrencyException)
         {
-            if (!_dbContext.Tasks.Where(task => task.Id == Id).ToList().Any())
+            if (!_dbContext.Todos.Where(task => task.Id == Id).ToList().Any())
             {
                 return NotFound();
             }
@@ -66,12 +66,12 @@ public class TasksController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteTask(Guid id)
     {
-        var task = await _dbContext.Tasks.FindAsync(id);
+        var task = await _dbContext.Todos.FindAsync(id);
         if (task == null)
         {
             return NotFound();
         }
-        _dbContext.Tasks.Remove(task);
+        _dbContext.Todos.Remove(task);
         await _dbContext.SaveChangesAsync();
         return NoContent();
     }
@@ -79,10 +79,10 @@ public class TasksController : ControllerBase
     [HttpDelete("tasks")]
     public async Task<IActionResult> DeleteAll()
     {
-        var allTasks = await _dbContext.Tasks.ToListAsync();
+        var allTasks = await _dbContext.Todos.ToListAsync();
         foreach (var task in allTasks)
         {
-            _dbContext.Tasks.Remove(task);
+            _dbContext.Todos.Remove(task);
 
         }
         await _dbContext.SaveChangesAsync();

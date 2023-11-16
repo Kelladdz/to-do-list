@@ -13,12 +13,12 @@ export default function MainContent() {
 	const [selectedDate, setSelectedDate] = useState(new Date());
 
 	const fetchTasks = async () => {
-		const response = await axios.get('https://app-todolist-web-pl-001.azurewebsites.net/tasks');
+		const response = await axios.get('https://localhost:7288/API/tasks');
 		setTasks(response.data);
 	};
 
 	const addTask = async (name, description, deadline, priority) => {
-		const response = await axios.post('https://app-todolist-web-pl-001.azurewebsites.net/API/tasks', {
+		const response = await axios.post('https://localhost:7288/API/tasks', {
 			name,
 			description,
 			deadline,
@@ -31,7 +31,7 @@ export default function MainContent() {
 	};
 
 	const editTaskById = async (id, newName, newDescription, newDeadline, newPriority) => {
-		const response = await axios.put(`https://app-todolist-web-pl-001.azurewebsites.net/API/${id}`, {
+		const response = await axios.put(`https://localhost:7288/API/${id}`, {
 			name: newName,
 			description: newDescription,
 			deadline: newDeadline,
@@ -51,7 +51,7 @@ export default function MainContent() {
 	};
 
 	const deleteTaskById = async id => {
-		await axios.delete(`https://app-todolist-web-pl-001.azurewebsites.net/API/${id}`);
+		await axios.delete(`https://localhost:7288/API/${id}`);
 		const updatedTasks = tasks.filter(task => {
 			return task.id !== id;
 		});
@@ -64,7 +64,7 @@ export default function MainContent() {
 
 	useEffect(() => {
 		fetchTasks();
-	}, [tasks]);
+	}, []);
 
 	let content = null;
 	let addBtn = (

@@ -25,22 +25,18 @@ export default function AddTask({ onAdd, onSubmit }) {
 
 	const handleChangeName = event => {
 		setName(event.target.value);
-		console.log('Name changed to: ', name);
 	};
 
 	const handleChangeDescription = event => {
 		setDescription(event.target.value);
-		console.log('Description changed to: ', description);
 	};
 
 	const handleChangeDeadline = date => {
 		setDeadline(date);
 		setDeadlineShow(false);
-		console.log('Deadline changed to: ', deadline);
 	};
 
 	const handleChangePriority = value => {
-		console.log('Priority changed to: ', priority);
 		setPriority(value);
 		setPriorityShow(false);
 	};
@@ -49,7 +45,6 @@ export default function AddTask({ onAdd, onSubmit }) {
 		event.preventDefault();
 		onAdd(name, description, deadline, priority);
 		onSubmit();
-		console.log('added', name, description, deadline, priority);
 	};
 
 	function displayResult() {
