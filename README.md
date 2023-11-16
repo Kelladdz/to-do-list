@@ -51,7 +51,7 @@ Very simple To-Do List powered by ASP.NET, React, Entity Framework, React Bootst
     dotnet run
     ```
     
--    Run React Project
+- Run React Project
 
     ```sh
     npm run dev
